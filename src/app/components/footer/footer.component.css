@@ -1,0 +1,54 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(36, 11, 93);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(36,11,93,1));
+    background-repeat: no-repeat;
+    background-size: 100% 25vh;
+    padding: 0.6vw 4.5vw;
+    z-index: 5;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contactUs, .email, .location, .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+.footer-container h3 {
+    font-size: 1.1em;
+}
+
+.footer-container p {
+    font-size: 0.84em;
+    color: rgb(164, 164, 164);
+    opacity: 0.5;
+}
+
+.circleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #140239;
+    height: 7vh;
+    width: 7cqh;
+    border-radius: 5vw;
+}
+.circleIconEmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #140239;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 5vw;
+}
+.circleIcon img {
+    height: 4.6vh;
+}
+.circleIconEmail img {
+    height: 3.2vh;
+}
