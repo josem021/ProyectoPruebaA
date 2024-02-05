@@ -8,8 +8,8 @@ footer {
     padding: 0.6vw 4.5vw;
     z-index: 5;
     color: white;
-    position:relative;
-    bottom: 0vh;
+    position: absolute;
+    top: 99%;
     width: 100%;
 }
 .contactUs, .email, .location, .footer-container {

@@ -4,5 +4,6 @@ import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
     {path: 'movies', component: MoviesComponent},
-    {path: 'home', component: HomeComponent}
+    {path: 'home', component: HomeComponent},
+    {path: '**', redirectTo: 'home'}
 ];
