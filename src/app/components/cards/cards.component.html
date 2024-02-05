@@ -1,0 +1,28 @@
+<section>
+    <article class="moviesWeek">
+        <div class="moviesWeekDesc">
+            <h4>
+                Las 10 peliculas tendencias<br>
+                de esta semana.
+            </h4>
+            <p>
+                Descubre las 10 peliculas tendencias<br>
+                de la semana.
+            </p>
+        </div>
+        <div class="moviesCards">
+            <div class="arrow Left" (click)="scrollLeft()"> < </div>
+            <div class="arrow Right" (click)="scrollRight()"> > </div>
+            <div class="cardsContainer">
+                @for (movie of movies; track $index) {
+                    <div class="movieCard">
+                        <img [src]="movie.image" alt="{{movie.name}}">
+                        <div class="movieCardName">
+                            <p>{{ movie.name }}</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>  
+    </article>
+</section>
