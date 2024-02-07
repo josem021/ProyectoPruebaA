@@ -25,14 +25,10 @@ export class CardsComponent implements OnInit{
   scrollLeft() {
     const cards= document.querySelector('.cardsContainer') as HTMLElement;
     cards.scrollLeft -= cards.offsetWidth;
-    
-    
   }
   scrollRight() {
     const cards = document.querySelector('.cardsContainer') as HTMLElement;
-    cards.scrollLeft += cards.offsetWidth;
-    
-    
+    cards.scrollLeft += cards.offsetWidth;  
   }
   ngOnInit(): void {
     
