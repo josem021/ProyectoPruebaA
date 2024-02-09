@@ -16,6 +16,8 @@ body {
     background-position: center top -5vh;
     height: 100%;
     display: block;
+    position: relative;
+    min-height: 100vh;
 }
 body::-webkit-scrollbar {
     width: 0.4vw;

@@ -4,12 +4,12 @@ footer {
     background-color: rgb(36, 11, 93);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(36,11,93,1));
     background-repeat: no-repeat;
-    background-size: 100% 25vh;
+    background-size: 100% ;
     padding: 0.6vw 4.5vw;
     z-index: 5;
     color: white;
     position: absolute;
-    top: 99%;
+    bottom: 0;
     width: 100%;
 }
 .contactUs, .email, .location, .footer-container {
@@ -19,11 +19,11 @@ footer {
     gap: 3vh;
 }
 .footer-container h3 {
-    font-size: 1.1em;
+    font-size: 1.1vw;
 }
 
 .footer-container p {
-    font-size: 0.84em;
+    font-size: 0.80vw;
     color: rgb(164, 164, 164);
     opacity: 0.5;
 }

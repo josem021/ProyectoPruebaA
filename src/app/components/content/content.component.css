@@ -1,9 +1,9 @@
 .headerMain {
     display: flex;
-    flex-direction: column; /* Elementos uno debajo del otro */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    height: 70vh; /* Ajusta la altura según tus necesidades */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 70vh;
 }
 
 h2 {
