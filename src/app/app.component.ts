@@ -7,6 +7,7 @@ import { CardsComponent } from './components/cards/cards.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { HomeComponent } from './components/home/home.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

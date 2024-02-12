@@ -1,3 +1,13 @@
-<div>
-    <h1>movies works!</h1>
+<div class="moviesContainer">  
+    @for (movie of movies; track $index) {
+    <div class="movieCard">
+        <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="{{movie.title}}">
+        <div class="movieCardName">
+            <h3>{{ movie.title }}</h3><br>
+        </div>
+        <div class="movieOverview">
+            <p>{{movie.overview}}</p>
+        </div>
+    </div>
+    }
 </div>
