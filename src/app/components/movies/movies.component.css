@@ -1,7 +1,7 @@
 .moviesContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    gap: 50px;
     color: white;
     padding: 8vw 10vw 20vw;
 }
@@ -20,6 +20,7 @@
 }
 .movieCard img {
     height: 18vw;
+    border-radius: 0.3vw;
 }
 .movieCardName {
     text-align: center;

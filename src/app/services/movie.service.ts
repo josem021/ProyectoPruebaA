@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
 export class MovieService {
   private Api_Key = "410ad842c1c6d74701740e81046314da";
 
-  constructor(private HttpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   getMovies(): Observable<any> {
     const urlM = `https://api.themoviedb.org/3/movie/popular?api_key=${this.Api_Key}`;
-    return this.HttpClient.get(urlM);
+    return this.httpClient.get(urlM);
   }
 }

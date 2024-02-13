@@ -20,10 +20,10 @@ export class MoviesComponent implements OnInit {
     this.movieService.getMovies().subscribe({
       next: (result) => {
         this.movies = result.results;
-      },
+      }/* ,
       error: (err) =>{
         console.log(err);
-      }
+      } */
     })
   }
 }
