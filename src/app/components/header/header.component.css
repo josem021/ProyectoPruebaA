@@ -31,17 +31,33 @@ ul {
 }
 
 a {
+    transition: 0.3s ease;
     text-decoration: none;
     color: white;
     cursor: pointer;
     font-size: 1.1vw;
 }
-
+nav a:hover {
+    color: rgb(107, 43, 226);
+    
+}
 .registerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 1vh; */
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
 }
-a:hover {
+#registerHeader, #loginHeader {
+    text-align: center;
+    width: 9vw;
+}
+.registerSection a:hover {
+    border: 1px solid rgb(107, 43, 226);
     color: rgb(107, 43, 226);
+    padding: 0.3vw;
+    transition: 0.2s ease;
 }
