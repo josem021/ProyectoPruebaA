@@ -6,13 +6,14 @@ import { ContentComponent } from './components/content/content.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { HomeComponent } from './components/home/home.component';
+import { RegisterComponent } from './components/forms/register/register.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterLink, HeaderComponent, FooterComponent, ContentComponent,
-  CardsComponent, MoviesComponent, HomeComponent],
+  CardsComponent, MoviesComponent, HomeComponent, RegisterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
