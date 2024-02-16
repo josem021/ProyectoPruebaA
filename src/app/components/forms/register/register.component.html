@@ -6,22 +6,22 @@
                 <h4><span id="welcomeMessageTitle">¡Bienvenido a Cinereview!</span></h4>
                 <h5><span id="welcomeMessageSubTitle">¿Estás listo para tu próxima pelicula o serie favorita?</span></h5>
             </div>
-            <form action="" class="formRegister">
+            <form [formGroup]="registrationForm" (ngSubmit)="clickRegister(registrationForm.value)" class="formRegister">
                 <div class="formGroupRegister">
                     <label>Correo Electrónico</label>
-                    <input type="text">
+                    <input type="text" name="correoElectronico" formControlName="correoElectronico">
                 </div>
                 <div class="formGroupRegister">
                     <label>Confirmar Correo</label>
-                    <input type="text">
+                    <input type="text" name="confirmarCorreo" formControlName="confirmarCorreo">
                 </div>
                 <div class="formGroupRegister">
                     <label>Contraseña</label>
-                    <input type="text">
+                    <input type="password" name="contraseña" formControlName="contraseña">
                 </div>
                 <div class="formGroupRegister">
                     <label>Nombre de Usuario</label>
-                    <input type="text">
+                    <input type="text" name="username" formControlName="username">
                 </div>
                 <button>Registrarse</button>
             </form>
