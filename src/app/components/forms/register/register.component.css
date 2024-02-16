@@ -1,0 +1,84 @@
+main {
+    color: white;
+}
+.formBox {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgba(36, 11, 93, 0.4);
+    backdrop-filter: blur(0.2vw);
+    box-shadow: 0 0 1px rgba(36, 11, 93, 0.4);
+    padding: 2vw;
+    margin: 1vw 30vw;
+    border-radius: 0.5vw;
+}
+#welcomeMessageTitle {
+    display: block;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 25ch;
+    /* animation: typing 2s ease-in-out infinite, blink .5s infinite step-end alternate; */
+    animation: typing 2s steps(25), colorChange 2s ease-in-out infinite, blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+article {
+    display: grid;
+    justify-items: center;
+}
+.welcomeMessage {
+    padding-bottom: 1vw;
+}
+h4 {
+    font-size: 1.3vw;
+    padding-bottom: 0.5vw;
+}
+h5 {
+    font-size: 1.1vw;
+}
+.formRegister {
+    display: grid;
+    justify-items: flex-start;
+    /* border: 1px solid red; */
+    width: 28vw;
+}
+
+.formGroupRegister {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85vh;
+    padding-bottom: 2vh;
+}
+.formGroupRegister label {
+    font-size: 1vw;
+    font-weight: bold;
+    color:rgb(118, 64, 242);
+}
+.formGroupRegister input {
+    width: 22vw;
+    height: 2.2vw;
+    background-color: rgba(255, 255, 255, 0.306);
+    border-radius: 0.3vw;
+    /* border: 0.5px solid rgb(199, 176, 251); */
+    color: white;
+    font-size: 1.3vw;
+    border: none;
+    padding: 0 0.5vw;
+}
+.formGroupRegister input:focus {
+    border: 1.5px solid black;
+    background-color: rgba(255, 255, 255, 0.469);
+    outline: none;
+    padding: 0 0.5vw;
+}
+
+/* @keyframes colorChange {
+    0% { color: black; }
+    50% { color: gray; }
+    100% { color: black; }
+} */
+@keyframes typing {
+    from {width: 0}
+}
+@keyframes blink {
+    50% {border-color: transparent;}
+}
