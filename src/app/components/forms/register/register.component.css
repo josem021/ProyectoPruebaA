@@ -25,6 +25,9 @@ article {
     display: grid;
     justify-items: center;
 }
+/* article.show {
+    visibility: visible;
+} */
 .welcomeMessage {
     padding-bottom: 1vw;
 }
@@ -70,11 +73,63 @@ h5 {
     outline: none;
     padding: 0 0.5vw;
 }
+.formGroupRegister div {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+.registerButton {
+    border: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(118, 64, 242);
+    border-radius: 0.4vw;
+    height: 2.8vw;
+    width: 8.4vw;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    margin-top: 0.5vw;
+}
+.registerButton:hover {
+    background-color: white;
+    color: rgb(118, 64, 242);
+}
+.continueButton {
+    height: 1.8vw;
+    width: 5vw;
+    border: none;
+    border-radius: 0.4vw;
+    background: transparent;
+    color: white;
+    font-size: 0.85vw;
+    border: 0.1vw solid;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.continueButton:hover {
+    color: rgb(118, 64, 242);
+}
+
+/* .step1, .step2, .step3, .step4 {
+    display: none;
+}
+.show {
+    display: block !important;
+} */
+/* #welcomeMessageTitle, #welcomeMessageSubTitle {
+    animation: fadeIn 2s;
+} */
 
 /* @keyframes colorChange {
     0% { color: black; }
     50% { color: gray; }
     100% { color: black; }
+} */
+/* @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1; visibility: visible;}
 } */
 @keyframes typing {
     from {width: 0}

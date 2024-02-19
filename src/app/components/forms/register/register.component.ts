@@ -17,6 +17,10 @@ export class RegisterComponent {
   });
 
   clickRegister(dateRegister: any){
-    console.log(dateRegister);
+    if (this.registrationForm.valid) {
+      console.log(dateRegister);
+    } else {
+      alert('Por favor completa todos los campos correctamente.');
+    }
   }
 }
