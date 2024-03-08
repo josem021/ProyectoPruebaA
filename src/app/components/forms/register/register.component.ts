@@ -23,4 +23,8 @@ export class RegisterComponent {
       alert('Por favor completa todos los campos correctamente.');
     }
   }
+
+  animationRegister() {
+    
+  }
 }

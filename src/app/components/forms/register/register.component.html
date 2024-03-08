@@ -3,8 +3,8 @@
     <section class="formBox">
         <article class="registerContainer">
             <div class="welcomeMessage">
-                <h4><span id="welcomeMessageTitle">¡Bienvenido a Cinereview!</span></h4>
-                <h5><span id="welcomeMessageSubTitle">¿Estás listo para tu próxima pelicula o serie favorita?</span></h5>
+                <h4><span class="welcomeMessageItem" id="welcomeMessageTitle">¡Bienvenido a Cinereview!</span></h4>
+                <h5><span class="welcomeMessageItem" id="welcomeMessageSubTitle">¿Estás listo para tu próxima pelicula o serie favorita?</span></h5>
             </div>
             <form [formGroup]="registrationForm" (ngSubmit)="clickRegister(registrationForm.value)" class="formRegister">
                 <div class="formGroupRegister">
