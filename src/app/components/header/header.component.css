@@ -64,7 +64,7 @@ nav a:hover {
 }
 .hamburgerHeader {
     display: none;
-    font-size: 2em;
+    font-size: 3.2vw;
     cursor: pointer;
     background: none;
     border: none;
@@ -80,33 +80,29 @@ nav a:hover {
 }
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid red;
+    }
+    .containerButtonHamburger {
+        border: 1px solid pink;
     }
     .hamburgerHeader {
         display: block;
-    }
-    .iconMain, nav, .registerSection {
-        width: 100%;
-        text-align: center;
+        border: 1px solid blue;
     }
     .iconMain h1 {
         font-size: 4vw;
     }
     nav ul {
         display: none;
-        flex-direction: column;
-        padding-left: 0;
     }
     nav ul li a {
         font-size: 3.5vw;
     }
-    .registerSection {
-        grid-template-columns: 1fr;
-    }
     .registerSection a {
         font-size: 3vw;
     }
-    nav, .registerSection {
+    .registerSection {
         display: none;
     }
 }
