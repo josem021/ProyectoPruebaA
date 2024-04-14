@@ -16,6 +16,7 @@ h2 {
     padding: 0.3vw;
 }
 .search input {
+    display: flex;
     width: 3vw;
     height: 3vw;
     padding: 0 1vw;

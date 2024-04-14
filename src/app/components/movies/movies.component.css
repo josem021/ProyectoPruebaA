@@ -5,6 +5,7 @@
     color: white;
     padding: 8vw 10vw 20vw;
 }
+
 .movieCard {
     display: flex;
     flex-direction: column;
@@ -12,48 +13,65 @@
     cursor: pointer;
     gap: 10px;
     position: relative;
-    min-width: 100px;
+    min-width: 200px; 
     min-height: 200px;
 }
+
 .movieCard:hover img {
     filter: brightness(40%);
 }
+
 .movieCard img {
-    height: 18vw;
+    height: auto;
+    max-width: 100%;
+    min-height: 300px; /* Establece una altura mínima para mantener la proporción vertical */
     border-radius: 0.3vw;
 }
+
 .movieCardName {
     text-align: center;
 }
-.movieCardName p {
-    display: none;
+
+.movieCardName h3 {
+    font-size: 1.2em;
 }
+
 .movieOverview {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
-    padding: 1vw 1vw;
-    
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
 }
+
 .movieOverview p {
+    margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
-    font-size: 1vw;
-    
-} 
+    width: 100%; 
+}
+
 .movieCard:hover .movieOverview {
     opacity: 1;
-    
 }
-h3 {
-    font-size: 1.2vw;
+
+@media only screen and (min-width: 1500px) {
+    .movieCard img {
+        min-height: 250px; /* Ajusta la altura mínima para pantallas más grandes */
+    }
+    .movieOverview {
+        font-size: 0.9em; /* Ajusta el tamaño de fuente para mantener la legibilidad */
+        padding: 0.9em; /* Ajusta el padding para mantener la proporción */
+    }
 }

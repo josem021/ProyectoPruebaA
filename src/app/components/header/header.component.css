@@ -21,7 +21,7 @@ header {
     -webkit-user-drag: none;
 }
 .iconMain h1 {
-    font-size: 1.3em;
+    font-size: 1.3vw;
 }
 ul {
     display: flex;
@@ -35,7 +35,7 @@ a {
     text-decoration: none;
     color: white;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1vw;
 }
 nav a:hover {
     color: rgb(107, 43, 226);
@@ -49,7 +49,7 @@ nav a:hover {
     align-items: center;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 0.9vw;
     transition: 0.2s ease;
 }
 #registerHeader, #loginHeader {
@@ -78,20 +78,24 @@ nav a:hover {
 .hamburgerHeader:hover {
     color: rgb(107, 43, 226);
 }
-@media (max-width: 600px) {
+@media (max-width: 550px) {
     header {
-        justify-content: space-between;
-        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid red; */
     }
-    .containerButtonHamburger {
+/*     .containerButtonHamburger {
         border: 1px solid pink;
-    }
+    } */
     .hamburgerHeader {
-        display: block;
-        border: 1px solid blue;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 30vw;
     }
     .iconMain h1 {
-        font-size: 4vw;
+        text-align: center;
+        font-size: 2vw;
     }
     nav ul {
         display: none;

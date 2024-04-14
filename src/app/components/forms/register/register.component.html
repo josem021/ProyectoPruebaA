@@ -1,42 +1,40 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <main>
     <section class="formBox">
-        <article class="registerContainer">
-            <div class="welcomeMessage">
-                <h4><span id="welcomeMessageTitle">¡Bienvenido a Cinereview!</span></h4>
-                <h5><span id="welcomeMessageSubTitle">¿Estás listo para tu próxima pelicula o serie favorita?</span></h5>
+      <article class="registerContainer">
+        <div class="welcomeMessage">
+          <h4><span class="welcomeMessageItem" id="welcomeMessageTitle">¡Bienvenido a Cinereview!</span></h4>
+          <h5><span class="welcomeMessageItem" id="welcomeMessageSubTitle">¿Estás listo para tu próxima película o serie favorita?</span></h5>
+        </div>
+        <form [formGroup]="registrationForm" (ngSubmit)="clickRegister()" class="formRegister">
+            <div class="formGroupRegister hidden" id="emailInput">
+            <label for="correoElectronico">Correo Electrónico</label>
+            <div>
+              <input type="text" name="correoElectronico" formControlName="correoElectronico" (input)="onEmailChange()">
             </div>
-            <form [formGroup]="registrationForm" (ngSubmit)="clickRegister(registrationForm.value)" class="formRegister">
-                <div class="formGroupRegister">
-                    <label for="correoElectronico">Correo Electrónico</label>
-                    <div>
-                        <input type="text" name="correoElectronico" formControlName="correoElectronico">
-                        <button class="continueButton">Continuar</button>
-                    </div>
-                </div>
-                <div class="formGroupRegister">
-                    <label>Confirmar Correo</label>
-                    <div>
-                        <input type="text" name="confirmarCorreo" formControlName="confirmarCorreo">
-                        <button class="continueButton">Continuar</button>
-                    </div>
-                </div>
-                <div class="formGroupRegister">
-                    <label>Contraseña</label>
-                    <div>
-                        <input type="password" name="contraseña" formControlName="contraseña">
-                        <button class="continueButton">Continuar</button>
-                    </div>
-                </div>
-                <div class="formGroupRegister">
-                    <label>Nombre de Usuario</label>
-                    <div>
-                        <input type="text" name="username" formControlName="username">
-                        <button class="continueButton">Continuar</button>
-                    </div>
-                </div>
-                <button class="registerButton">Registrarse</button>
-            </form>
-        </article>
+          </div>
+          <div class="formGroupRegister" [class.show]="showConfirmEmail" id="confirmEmailInput">
+            <label>Confirmar Correo</label>
+            <div>
+              <input type="text" name="confirmarCorreo" formControlName="confirmarCorreo" (input)="onConfirmEmailChange()">
+            </div>
+          </div>
+          <div class="formGroupRegister" [class.show]="showPassword" id="passwordInput">
+            <label>Contraseña</label>
+            <div>
+              <input type="password" name="password" formControlName="password" (input)="onPasswordChange()">
+            </div>
+          </div>
+          <div class="formGroupRegister" [class.show]="showUsername" id="usernameInput">
+            <label>Nombre de Usuario</label>
+            <div>
+                <input type="text" name="username" formControlName="username" (input)="onUsernameChange()">
+            </div>
+          </div>
+          <button class="registerButton" [class.show]="showRegisterButton">Registrarse</button>
+        </form>
+      </article>
     </section>
 </main>
+  
+  
